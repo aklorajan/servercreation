@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <button
+        class="btn btn-danger"
+     >Delete Server</button>
+      <button
+        class="btn btn-primary"
+        [disabled]="!serverStatus"
+        (click)="onServerCreation()">Creat Server</button>
+      <p *ngFor="let server of newServer; let i = index"> {{server}} with number {{i + 1}}</p>
+
+    </div>
+
+  </div>
+</div>
+
